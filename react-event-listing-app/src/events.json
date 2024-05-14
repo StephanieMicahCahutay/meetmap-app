@@ -1,0 +1,132 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Manila Art Festival",
+      "type": "Arts",
+      "description": "Explore stunning art displays from top Filipino artists and enjoy workshops and live performances.",
+      "location": "Manila, Philippines",
+      "date": "2024-03-15",
+      "ticketPrice": "500",
+      "capacity": "200",
+      "organizer": {
+        "name": "Art Manila",
+        "description": "Dedicated to showcasing contemporary art and promoting local artists.",
+        "contactEmail": "info@artmanila.ph",
+        "contactPhone": "632-456-7890"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Cebu Tech Summit",
+      "type": "Technology",
+      "description": "Join industry leaders to discuss future tech trends, with keynote speakers from top tech companies.",
+      "location": "Cebu City, Philippines",
+      "date": "2024-05-21",
+      "ticketPrice": "1200",
+      "capacity": "300",
+      "organizer": {
+        "name": "TechForward Cebu",
+        "description": "Leading technology conference organizer in the Visayas.",
+        "contactEmail": "contact@techforwardcebu.ph",
+        "contactPhone": "632-555-1234"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Davao Food Expo",
+      "type": "Food & Drink",
+      "description": "Taste and celebrate the rich culinary traditions of Mindanao with local and international food vendors.",
+      "location": "Davao City, Philippines",
+      "date": "2024-09-12",
+      "ticketPrice": "300",
+      "capacity": "500",
+      "organizer": {
+        "name": "Davao Gourmet Collective",
+        "description": "Promotes Davao's food culture and supports local restaurateurs and chefs.",
+        "contactEmail": "davaofoodexpo@foodph.ph",
+        "contactPhone": "632-667-8901"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Boracay Music and Arts Festival",
+      "type": "Music",
+      "description": "A weekend of music, art, and beach activities set on the stunning island of Boracay.",
+      "location": "Boracay, Philippines",
+      "date": "2024-07-03",
+      "ticketPrice": "2500",
+      "capacity": "1000",
+      "organizer": {
+        "name": "Island Vibes Events",
+        "description": "Creates unique festival experiences in beautiful locations across the Philippines.",
+        "contactEmail": "info@islandvibes.ph",
+        "contactPhone": "632-765-4321"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Baguio Flower Festival",
+      "type": "Cultural",
+      "description": "Celebrate the blooming season in Baguio with parades, flower shows, and cultural performances.",
+      "location": "Baguio City, Philippines",
+      "date": "2024-02-28",
+      "ticketPrice": "Free",
+      "capacity": "No limit",
+      "organizer": {
+        "name": "Baguio Festivals Inc.",
+        "description": "Organizes annual cultural and artistic events in Baguio to celebrate local traditions and boost tourism.",
+        "contactEmail": "events@baguiofestivals.ph",
+        "contactPhone": "632-998-7654"
+      }
+    },
+    {
+      "id": "6",
+      "title": "Palawan Eco Adventure Tours",
+      "type": "Educational",
+      "description": "Engage with nature through guided eco tours exploring Palawan's renowned natural beauty.",
+      "location": "Palawan, Philippines",
+      "date": "2024-11-15",
+      "ticketPrice": "1800",
+      "capacity": "150",
+      "organizer": {
+        "name": "Palawan Adventures",
+        "description": "Offers educational and environmentally responsible travel experiences in Palawan.",
+        "contactEmail": "adventure@palawan.com",
+        "contactPhone": "632-556-7892"
+      }
+    },
+    {
+      "id": "7",
+      "title": "Metro Manila Business Conference",
+      "type": "Conference",
+      "description": "Network with business leaders and entrepreneurs from across Southeast Asia and gain insights into the latest industry trends.",
+      "location": "Manila, Philippines",
+      "date": "2024-10-05",
+      "ticketPrice": "3500",
+      "capacity": "400",
+      "organizer": {
+        "name": "Business Network Asia",
+        "description": "Connects business professionals and industry leaders through high-impact conferences and networking events.",
+        "contactEmail": "info@businessnetworkasia.ph",
+        "contactPhone": "632-345-6789"
+      }
+    },
+    {
+      "id": "f4f6",
+      "title": "sdf",
+      "type": "",
+      "location": "dfas",
+      "description": "sdfas",
+      "date": "2024-05-31T00:58",
+      "ticketPrice": "1233",
+      "capacity": "122",
+      "organizer": {
+        "name": "asdf",
+        "description": "asdf",
+        "contactEmail": "ad@sdfs",
+        "contactPhone": "242"
+      }
+    }
+  ]
+}
