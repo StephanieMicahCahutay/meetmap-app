@@ -124,9 +124,17 @@ const EventPage = ({ deleteEvent }) => {
 
 
 const eventLoader = async ({ params }) => {
-    const res = await fetch(`/https://my-json-server-vercel-eight.vercel.app//events/${params.id}`);
-    const data = await res.json();
-    return data;
+    try {
+        const response = await fetch(`https://my-json-server-vercel-eight.vercel.app/events/${params.id}`);
+        if (!response.ok) {
+            throw new Error('Failed to fetch');
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Error loading event:", error);
+        throw error;
+    }
 };
 
 export { EventPage as default, eventLoader };
