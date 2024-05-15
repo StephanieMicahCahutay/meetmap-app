@@ -124,7 +124,7 @@ const EventPage = ({ deleteEvent }) => {
 
 
 const eventLoader = async ({ params }) => {
-    const res = await fetch(`/api/events/${params.id}`);
+    const res = await fetch(`/https://my-json-server-vercel-eight.vercel.app//events/${params.id}`);
     const data = await res.json();
     return data;
 };

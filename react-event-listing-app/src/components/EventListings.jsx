@@ -8,7 +8,7 @@ const EventListings = ({ isHome = false }) => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const apiUrl = isHome ? '/api/events?_limit=3' : '/api/events';
+      const apiUrl = isHome ? '/https://my-json-server-vercel-eight.vercel.app//events?_limit=3' : '/https://my-json-server-vercel-eight.vercel.app//events';
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();

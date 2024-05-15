@@ -14,7 +14,7 @@ import EditEventPage from './pages/EditEventPage';
 
 const App = () => {
   const addEvent = async (newEvent) => {
-    const res = await fetch('/api/events', {
+    const res = await fetch('/https://my-json-server-vercel-eight.vercel.app//events', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ const App = () => {
 
   // Delete Event
   const deleteEvent = async (id) => {
-    const res = await fetch(`/api/events/${id}`, {
+    const res = await fetch(`/https://my-json-server-vercel-eight.vercel.app//events/${id}`, {
       method: 'DELETE',
     });
     return;
@@ -34,7 +34,7 @@ const App = () => {
 
     // Update Event
     const updateEvent = async (event) => {
-      const res = await fetch(`/api/events/${event.id}`, {
+      const res = await fetch(`/https://my-json-server-vercel-eight.vercel.app//events/${event.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
