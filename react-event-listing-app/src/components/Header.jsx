@@ -1,6 +1,6 @@
 const Header = ({
     title = 'Discover Your Next Adventure',
-    subtitle = 'Explore, Connect, and Experience the Best Events Around You',
+    subtitle = 'Explore, Connect, and Experience the Best Events Around You!',
   }) => {
     return (
       <section className='bg-[#EA7E5D] py-20 mb-4'>
