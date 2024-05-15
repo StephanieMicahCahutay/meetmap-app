@@ -8,18 +8,21 @@ const EventPage = ({ deleteEvent }) => {
     const { id } = useParams();
     const event = useLoaderData();
 
-    const onDeleteClick = (eventId) => {
+    const onDeleteClick = async (eventId) => {
         const confirm = window.confirm(
             'Are you sure you want to delete this listing?'
         );
 
         if (!confirm) return;
 
-        deleteEvent(eventId);
-
-        toast.success('Event deleted successfully');
-
-        navigate('/events');
+        try {
+            await deleteEvent(eventId);
+            toast.success('Event deleted successfully');
+            navigate('/events');
+        } catch (error) {
+            toast.error('Failed to delete event. Please try again.');
+            console.error("Error deleting event:", error);
+        }
     };
 
     return (
