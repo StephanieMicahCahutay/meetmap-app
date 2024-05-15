@@ -26,23 +26,40 @@ const App = () => {
 
   // Delete Event
   const deleteEvent = async (id) => {
-    const res = await fetch(`https://my-json-server-vercel-eight.vercel.app/events/${id}`, {
-      method: 'DELETE',
-    });
-    return;
-  };
-
-    // Update Event
-    const updateEvent = async (event) => {
-      const res = await fetch(`https://my-json-server-vercel-eight.vercel.app/events/${event.id}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(event),
+    try {
+      const res = await fetch(`https://my-json-server-vercel-eight.vercel.app/events/${id}`, {
+        method: 'DELETE',
       });
-      return;
-    };
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+    } catch (error) {
+      console.error("Error deleting event:", error);
+      throw error;
+    }
+  };
+  
+
+
+  // Update Event
+  const updateEvent = async (updatedEvent) => {
+    try {
+        const res = await fetch(`https://my-json-server-vercel-eight.vercel.app/events/${updatedEvent.id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedEvent),
+        });
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return await res.json();
+    } catch (error) {
+        console.error("Error updating event:", error);
+        throw error;
+    }
+};
 
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -50,15 +67,15 @@ const App = () => {
         <Route index element={<HomePage />} />
         <Route path='events' element={<EventsPage />} />
         <Route path='add-event' element={<AddEventPage addEventSubmit={addEvent} />} />
-        <Route 
+        <Route
           path='edit-event/:id'
-          element={<EditEventPage updateEventSubmit={updateEvent}  />}
-          loader={eventLoader} 
+          element={<EditEventPage updateEventSubmit={updateEvent} />}
+          loader={eventLoader}
         />
-        <Route 
+        <Route
           path='events/:id'
           element={<EventPage deleteEvent={deleteEvent} />}
-          loader={eventLoader} 
+          loader={eventLoader}
         />
         <Route path='*' element={<NotFoundPage />} />
       </Route>
